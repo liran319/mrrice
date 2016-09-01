@@ -1,0 +1,10 @@
+@import "configs";
+
+@include font-face(qingke, '../fonts/qkbys-webfont');
+@include font-face(iconfont, '../fonts/iconfont/iconfont');
+
+
+$font-family-serif: "Hiragino Mincho ProN W6", Georgia, "Times New Roman", Times, serif;
+
+$font-family-qingke: qingke, $font-family-serif;
+

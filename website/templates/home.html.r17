@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>饭先生——美食的缔造者</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.ico')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/bootstrap.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/animate.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/home.css')}}">
+
+
+    <script src="{{url_for('static',filename='javascripts/vendor/jquery-2.1.1.min.js')}}"></script>
+    <script src="{{url_for('static',filename='javascripts/vendor/bootstrap.min.js')}}"></script>
+    
+</head>
+<body>
+    <!-- <div class="banner"></div> -->
+    <div id="body">
+        <div class="nav-bar">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#"><img src={{url_for('static', filename='images/home.png')}}></a></li>
+                <li class="nav-item"><a href="#"><img src={{url_for('static', filename='images/2.png')}}></a></li>
+                <li class="nav-item"><a href="#"><img src={{url_for('static', filename='images/3.png')}}></a></li>
+                <li class="nav-item"><a href="#"><img src={{url_for('static', filename='images/4.png')}}></a></li>
+                <li class="nav-item"><a href="#"><img src={{url_for('static', filename='images/5.png')}}></a></li>
+                <!-- <li role="presentation"  class="active"><a href="#">首页</a></li>
+                <li role="presentation" class=""><a href="#">研究所内幕</a></li>
+                <li role="presentation" class=""><a href="#">大事迹</a></li>
+                <li role="presentation" class=""><a href="#">关于发财那点事</a></li>
+                <li role="presentation" class=""><a href="#">加入饭星人</a></li> -->
+            </ul>
+        </div>
+        <div id="myCarousel" class="carousel slide">
+           <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>   
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+              <div class="item active">
+                 <img src={{url_for('static', filename='images/slider/1.jpg')}} alt="First slide">
+              </div>
+              <div class="item">
+                 <img src={{url_for('static', filename='images/slider/2.jpg')}} alt="Second slide">
+              </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="carousel-control left" href="#myCarousel" 
+              data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" 
+              data-slide="next">&rsaquo;</a>
+        </div>
+    </div>
+
+    <script src="{{url_for('static', filename='javascripts/main.js')}}"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+
+@import "main";
+@import "navbar";
+@import "carousel";
+@import "mrrice-links";
+@import "footer";
+
+
+#body {
+    width: 100%;
+    padding: 0 20% 0;
+    .rice-text {
+        font-size: 22px;
+        letter-spacing: .8em;
+    }
+    .forks {
+        margin: 50px 0 30px;
+        background: url("../images/fork.png") no-repeat center;
+        background-size: contain;
+        width: 100%;
+        padding-top: 30px;
+    }
+    .triangle-down {
+        text-align: center;
+        > .fa.fa-caret-down {
+            font-size: 20px;
+        }
+    }
+}
+h3 {
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 30px 0;
+}
+.rice-banner {
+    display: block;
+    // margin-bottom: 30px;
+    background: url("../images/banner.png") no-repeat top center;
+    background-size: cover;
+    padding-top: 23%;
+}
+.neimu-fan {
+    display: block;
+    background: url("../images/neimu/fan.png") no-repeat top center;
+    background-size: contain;
+    padding-top: 53.96%;
+}
+#neimuCarousel {
+    .carousel-inner > .item {
+        width: 100%;
+        .img {
+            display: block;
+            padding-top: 56.25%;
+        }
+        &:first-child > div.img {
+            background: url("../images/neimu/carousel-01.jpg") no-repeat top center;
+            background-size: contain;
+        }
+        &:nth-child(2) > div.img {
+            background: url("../images/neimu/carousel-02.jpg") no-repeat top center;
+            background-size: contain;
+        }
+        &:nth-child(3) > div.img {
+            background: url("../images/neimu/carousel-03.jpg") no-repeat top center;
+            background-size: contain;
+        }
+        &:nth-child(4) > div.img {
+            background: url("../images/neimu/carousel-04.jpg") no-repeat top center;
+            background-size: contain;
+        }
+    }
+}
+.house-intro .info {
+    display: block;
+    &:nth-child(1) {
+        background: url("../images/neimu/11.png") no-repeat top center;
+        background-size: cover;
+        padding-top: 24.23%;
+    }
+    &:nth-child(2) {
+        background: url("../images/neimu/22.png") no-repeat top center;
+        background-size: cover;
+        padding-top: 23%;
+    }
+    &:nth-child(3) {
+        background: url("../images/neimu/33.png") no-repeat top center;
+        background-size: cover;
+        padding-top: 22.28%;
+    }
+    &:nth-child(4) {
+        background: url("../images/neimu/44.png") no-repeat top center;
+        background-size: cover;
+        padding-top: 38.05%;
+    }
+
+}
+.features {
+    .floors {
+        @include clearfix;
+        margin: 15px 0;
+        background-color: #dedede;
+        img {
+            padding: 0;
+        }
+        .titles {
+            text-align: center;
+            font-size: 2.5em;
+            margin-top: 60px;
+        }
+
+        .details {
+            padding: 4em;
+            ul {
+                padding-left: 0;
+            }
+            li {
+                font-size: 1.2em;
+                list-style-type: none;
+            }
+        }
+    }
+    .floors-3 {
+        background-color: #fff;
+    }
+}
+.triangle-down {
+    text-align: center;
+}

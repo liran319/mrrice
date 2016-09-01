@@ -1,0 +1,21 @@
+.rice-carousels {
+    width: 100%;
+    margin: 0 auto 30px;
+    .carousel-inner {
+        > img {
+            width: 100%;
+        }
+    }
+    i.fa.fa-angle-right, i.fa.fa-angle-left {
+        font-size: 40px;
+        color: #fff;
+        position: absolute;
+        top: 48%;
+    }
+    i.fa.fa-angle-right {
+        right: 40%;
+    }
+    i.fa.fa-angle-left {
+        left: 40%;
+    }
+}

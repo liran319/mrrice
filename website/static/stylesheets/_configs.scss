@@ -1,0 +1,19 @@
+
+//== Typography
+$font-family-sans-serif:  Avenir, "Helvetica Neue", Arial,
+                          "Hiragino Sans GB", "Hiragino Sans GB W3",
+                          "Microsoft YaHei", "Wenquanyi Micro Hei",
+                          sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+
+//== Image Functions
+// @function image-url($path, $only-path: false, $cache-buster: false) {
+//     @return url("/assets/images/" + $path);
+// }
+
+@function bg-image-url($path) {
+    @return url("../images/" + $path);
+}
+
+//== Bourbon
+@import "bourbon/bourbon";

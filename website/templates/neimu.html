@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>饭先生——美食的缔造者</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.ico')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/bootstrap.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/animate.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/font-awesome.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/iconfont.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/neimu.css')}}">
+
+<script src="{{url_for('static',filename='javascripts/vendor/jquery-2.1.1.min.js')}}"></script>
+<script src="{{url_for('static',filename='javascripts/vendor/bootstrap.min.js')}}"></script>
+<style type="text/css"></style>
+</head>
+<body>
+    <div id="body0" class="container">
+        <div class="rice-banner"></div>
+        {% include "navbar.html" %}
+        <div class="neimu-fan"></div>
+
+        <!-- carousel -->
+        <div id="neimuCarousel" class="carousel slide rice-carousels" data-ride="carousel">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#neimuCarousel" data-slide-to="0"></li>
+                <li data-target="#neimuCarousel" data-slide-to="1"></li>
+                <li data-target="#neimuCarousel" data-slide-to="2"></li>
+                <li data-target="#neimuCarousel" data-slide-to="3" class="active"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item">
+                    <div class="img"></div>
+                </div>
+                <div class="item">
+                    <div class="img"></div>
+                </div>
+                <div class="item">
+                    <div class="img"></div>
+                </div>
+                <div class="item active">
+                    <div class="img"></div>
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="carousel-control left" href="#neimuCarousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+            <a class="carousel-control right" href="#neimuCarousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+        </div>
+
+        <h3>品牌理念</h3>
+        <div class="slogen text-center">
+            <h2>爱，美食与梦想的创造者</h2>
+            <h4>饭生活研究所，为每个想开店的小伙伴提供一个创业平台</h4>
+            <p>包含整合各类开店资源，以开店前期产品定位到后期经营模式，拥有餐饮、饮料、品牌设计一条龙的服务品牌</p>
+        </div>
+        <div class="house-intro">
+            <div class="info"></div>
+            <div class="info"></div>
+            <div class="info"></div>
+            <div class="info"></div>
+        </div>
+
+        <h3>研究所功能化</h3>
+        <div class="features">
+            <div class="floors floors-1 row">
+                <img class="img col-lg-4 col-md-4 col-sm-12 col-xs-12" src="{{url_for('static', filename='images/neimu/F1.png')}}">
+                <!-- </div> -->
+                <div class="titles col-lg-4 col-md-4 col-sm-6 col-xs-12">一楼</div>
+                <div class="details col-lg-4 col-md-4 col-sm-6 col-xs-12">主要为产品加工与娱乐休闲为主。其建有一个小型中央厨房，专 用研发各类主食，配菜等，甜品室可制作与研发各类轻食饮品等， 为多样化的产品线提供出餐基础。</div>
+            </div>
+            <div class="floors floors-2 row">
+                <img class="img col-lg-4 col-md-4 col-sm-12 col-xs-12" src="{{url_for('static', filename='images/neimu/F2.png')}}">
+                <div class="titles col-lg-4 col-md-4 col-sm-6 col-xs-12">二楼</div>
+                <div class="details col-lg-4 col-md-4 col-sm-6 col-xs-12">主要以办公为主，品牌设计、店面装修、运营管理 ，工作洽谈为主。</div>
+            </div>
+            <div class="floors floors-3 row">
+                <img class="img col-lg-4 col-md-4 col-sm-12 col-xs-12" src="{{url_for('static', filename='images/neimu/map-f1.png')}}">
+                <img class="img col-lg-4 col-md-4 col-sm-12 col-xs-12" src="{{url_for('static', filename='images/neimu/map-f2.png')}}">
+                <div class="details col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <h5>饭生活馆所有的功能化</h5>
+                    <ul>
+                        <li>品牌设计 视觉形象</li>
+                        <li>策划推广 线下活动路演等</li>
+                        <li>经营模式 管理手册</li>
+                        <li>产品研发 定制专项产品</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="minjay">
+            <img src="{{url_for('static', filename='images/neimu/minjay.png')}}">
+        </div>
+        <h3 class="rice-text text-center">以下均为饭生活研究所出品</h3>
+        <div class="forks"></div>
+        <div class="triangle-down"><i class="fa fa-caret-down"></i></div>
+
+        <div class="mrrice-links">
+            <div class="link-item"><a href="xiaoquexiing.html"><div class="xiaoquexing"></div></a></div>
+            <div class="link-item"><a href="fanxiansheng.html"><div class="fanxiansheng"></div></a></div>
+            <div class="link-item"><a href="huahuzi.html"><div class="huahuzi"></div></a></div>
+            <div class="link-item"><a href="amoylife.html"><div class="amoylife"></div></a></div>
+            <div class="link-item"><a href="koubei.html"><div class="koubei"></div></a></div>
+        </div>
+    </div>
+    {% include 'global-footer.html'%}
+    <div id="myParticleground"></div>
+
+    {% include "plugins.html" %}
+    <script src="{{url_for('static', filename='javascripts/main.js')}}"></script>
+</body>
+</html>

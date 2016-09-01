@@ -1,0 +1,38 @@
+#global-footer {
+    @include clearfix;
+    background-color: #efe6e2;
+
+    .inline-div {
+        display: inline-block;
+        float: left;
+        height: 180px;
+        width: 33.333333%;
+    }
+    .footer-bg-img {
+        background: bg-image-url('footer.jpg') no-repeat left bottom;
+        background-size: contain;
+    }
+    .footer-text {
+        padding-top: 60px;
+        // position: relative;
+        p {
+            font-size: 14px;
+            color: #514c4b;
+            letter-spacing: 4px;
+        }
+        .filing {
+            font-size: 12px;
+            // position: absolute;
+            // bottom: 10px;
+        }
+    }
+    .footer-qrcode {
+        .qrcode-img {
+            width: 130px;
+            height: 130px;
+            margin: 25px auto;
+            background: bg-image-url('rice-qrcode.png') no-repeat center;
+            background-size: contain;
+        }
+    }
+}

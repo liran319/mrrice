@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>饭先生——美食的缔造者</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.ico')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/bootstrap.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/animate.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/font-awesome.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/iconfont.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/dashiji.css')}}">
+
+<script src="{{url_for('static',filename='javascripts/vendor/jquery-2.1.1.min.js')}}"></script>
+<script src="{{url_for('static',filename='javascripts/vendor/bootstrap.min.js')}}"></script>
+<script src="{{url_for('static',filename='javascripts/vendor/jquery.fluidbox.js')}}"></script>
+<script src="{{url_for('static',filename='javascripts/vendor/typeout.min.js')}}"></script>
+
+</head>
+<body>
+    <div id="dashiji" class="container">
+        <div class="rice-banner"></div>
+        {% include "navbar.html" %}
+
+        <div class="rice-shiji">
+            <div class="typeout-demo">
+                <h2 class="text-center">饭先生是<span class="typeout"></span></h2>
+            </div>
+        </div>
+        <div class="shiji-wrapper row">
+            <div class="shiji-item col-lg-6 col-md-6 col-sm-12">
+                <div>
+                    <div class="about"><h4>投票最高具有气质的吃相！！将免费吃7天饭先生经典套餐！！！！将亮出最有气质得而吃相！每名入选者将获得新品免费试吃</h4></div>
+                </div>
+            </div>
+            <div class="shiji-item col-lg-6 col-md-6 col-sm-12">
+                <div>
+                    <div class="about"><h4>淘宝口碑外卖软件 搜索以下两家商家可下单领取厦大生活 厦门大学南强书苑 敬贤二 （勤业餐厅旁边） 饭先生</h4></div>
+                </div>
+            </div>
+            <div class="shiji-item col-lg-6 col-md-6 col-sm-12">
+                <div>
+                    <div class="about"><h4>2015.10.01 中华城新潮食美食比拼饭先生荣获全场最佳人气奖与三等奖</h4></div>
+                </div>
+            </div>
+            <div class="shiji-item col-lg-6 col-md-6 col-sm-12">
+                <div>
+                    <div class="about"><h4>2015.9.25~2015.9.26 参加 COS 夏日祭展会火热售罄！</h4></div>
+                </div>
+            </div>
+            <div class="shiji-item col-lg-6 col-md-6 col-sm-12">
+                <div>
+                    <div class="about"><h4>第一家加盟店</h4></div>
+                </div>
+            </div>
+            <div class="shiji-item col-lg-6 col-md-6 col-sm-12">
+                <div>
+                    <div class="about"><h4>改装车展</h4></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'global-footer.html'%}
+    <div id="myParticleground"></div>
+
+    {% include "plugins.html" %}
+    <script src="{{url_for('static', filename='javascripts/dashiji.js')}}"></script>
+    <script src="{{url_for('static', filename='javascripts/main.js')}}"></script>
+</body>
+</html>
