@@ -27,6 +27,7 @@ img {
     a {
         color: #1f1a17;
         border-bottom: 2px solid transparent;
+        @include transition(all .3s ease-in-out);
     }
     &.avtice > a, > a:hover, > a:focus {
         color: #0D3B0D;
